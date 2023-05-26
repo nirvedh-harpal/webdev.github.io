@@ -5,9 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style></style>
+    <style>
+      body {
+        background-color: #ffffff;
+        margin: 0px
+      }
+
+      #table-row {
+        width: 100%;
+        height: 100px;
+        background-color: #D2D4F2;
+      }
+
+      #table-srno {
+        width: 10%;
+        font-size: 36px;
+        text-align: center;
+        font-family: Inter;
+      }
+
+      #table-profile-outer {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #table-profile-inner {
+        width: 74.42px;
+        height: 74.42px;
+        border-radius: 50%;
+        background: rgb(186, 190, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #table-username {
+        width: 40%;
+        font-size: 36px;
+        font-family: Inter;
+        text-align: left;
+        padding-left: 20px;
+      }
+
+      #table-points {
+        width: 40%;
+        font-size: 36px;
+        font-family: Inter;
+        text-align: center;
+      }
+
+      #table-seperator {
+        background: white;
+        height: 10px;
+      }
+
+      #header-position {
+        border-radius: 50%;
+        background: #BABEFF;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        color: white;
+        font-size: 24px;
+      }
+
+      #header-profile-outer {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px;
+        margin-inline: 50px;
+      }
+
+      #header-profile-outer-1 {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px;
+        margin-inline: 50px;
+      }
+
+      #header-profile-inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: rgb(186, 190, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #header-second-third-username {
+        margin-top: 5px;
+        padding: 10px 30px;
+        background: rgb(186, 190, 255);
+        border-radius: 20px;
+        font-size: 16px;
+        color: white;
+        font-family: Inter;
+      }
+
+      #header-first-username {
+        margin-top: 5px;
+        padding: 10px 30px;
+        background: rgb(186, 190, 255);
+        border-radius: 20px;
+        font-size: 18px;
+        color: white;
+        font-family: Inter;
+        font-weight: 700;
+      }
+
+      #header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #header-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+      }
+    </style>
   </head>
-  <body style="background-color:#ffffff; margin: 0px">
+  <body>
     <center>
       <table style="width: 100%;background-color:#ffffff; border-spacing: 0px">
         <tr style="width: 100%; height:100px;background-color:#656CEC;">
@@ -16,248 +158,88 @@
         <tr style="width:100%; height:4px;"></tr>
         <tr style="width: 100%; height:347px;background-color:#656CEC;">
           <td colspan="4" style=" border-radius: 0px 0px 64px 64px;">
-            <div style="
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: flex-end;">
-              <div style="display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;">
-                <div style="border-radius: 50%;
-                  background: #BABEFF;
-                  width: 35px;
-                  height: 35px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center; margin-bottom: 5px;color:white;font-size: 24px;">2</div>
-                <div style="width: 160px;
-                  height: 160px;
-                  border-radius: 50%;
-                  background: rgb(255, 255, 255);
-                  display: flex;
-                  justify-content: center;
-                  align-items: center; padding: 6px; margin-inline: 50px;">
-                  <div style="width: 100%;
-                    height: 100%;
-                    border-radius: 50%;
-                    background: rgb(186, 190, 255);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;">
-                    
-                  </div>
+            <div id="header-container">
+              <div id="header-wrapper">
+                <div id="header-position">2</div>
+                <div id="header-profile-outer">
+                  <div id="header-profile-inner"></div>
                 </div>
-                <div style="margin-top: 5px;
-    padding: 10px 30px;
-    background: rgb(186, 190, 255);
-    border-radius: 20px; font-size: 16px; color: white;font-family: Inter;">Jeremy - 672</div>
+                <div id="header-second-third-username">Jeremy - 672</div>
               </div>
-              <div style="display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;">
-                <div style="border-radius: 50%;
-                  background: #BABEFF;
-                  width: 35px;
-                  height: 35px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center; margin-bottom: 5px;color:white;font-size: 24px;">1</div>
-                <div style="width: 214.86px;
-                  height: 214.86px;
-                  border-radius: 50%;
-                  background: rgb(255, 255, 255);
-                  display: flex;
-                  justify-content: center;
-                  align-items: center; padding: 6px; margin-inline: 50px;">
-                  <div style="width: 100%;
-                    height: 100%;
-                    border-radius: 50%;
-                    background: rgb(186, 190, 255);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;">
-                    
-                  </div>
+              <div id="header-wrapper">
+                <div id="header-position">1</div>
+                <div id="header-profile-outer-1">
+                  <div id="header-profile-inner"></div>
                 </div>
-                <div style="margin-top: 5px;
-    padding: 10px 30px;
-    background: rgb(186, 190, 255);
-    border-radius: 20px; font-size: 16px; color: white;font-family: Inter;">Amanda - 764</div>
+                <div id="header-first-username">Amanda - 764</div>
               </div>
-              <div style="display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;">
-                <div style="border-radius: 50%;
-                  background: #BABEFF;
-                  width: 35px;
-                  height: 35px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center; margin-bottom: 5px;color:white;font-size: 24px;">3</div>
-                <div style="width: 160px;
-                  height: 160px;
-                  border-radius: 50%;
-                  background: rgb(255, 255, 255);
-                  display: flex;
-                  justify-content: center;
-                  align-items: center; padding: 6px; margin-inline: 50px;">
-                  <div style="width: 100%;
-                    height: 100%;
-                    border-radius: 50%;
-                    background: rgb(186, 190, 255);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;">
-                    
-                  </div>
+              <div id="header-wrapper">
+                <div id="header-position">3</div>
+                <div id="header-profile-outer">
+                  <div id="header-profile-inner"></div>
                 </div>
-                <div style="margin-top: 5px;
-    padding: 10px 30px;
-    background: rgb(186, 190, 255);
-    border-radius: 20px; font-size: 16px; color: white;font-family: Inter;">Jefferey - 542</div>
+                <div id="header-second-third-username">Jefferey - 542</div>
               </div>
             </div>
           </td>
         </tr>
         <tr style="width:100%; height:23px;"></tr>
-        <tr style="width: 100%; height:100px;background-color:#D2D4F2;">
-          <td style="width:10%;font-size:36px; text-align: center;font-family:Inter;"> 4</td>
+        <tr id="table-row">
+          <td id="table-srno"> 4</td>
           <td style="width:10%">
-            <div style="width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: rgb(255, 255, 255);
-            display: flex;
-                  align-items: center;
-                  justify-content: center;">
-            <div style="width: 74.42px;
-              height:74.42px;
-              border-radius: 50%;
-              background: rgb(186, 190, 255);
-              display: flex;
-                  align-items: center;
-                  justify-content: center;">
-              
+            <div id="table-profile-outer">
+              <div id="table-profile-inner"></div>
             </div>
-          </div>
+            </div>
           </td>
-          <td style="width:40%;font-size:36px;font-family:Inter; text-align: left; padding-left: 20px;"> Joe </td>
-          <td style="width:40%;font-size:36px;font-family:Inter; text-align: center;"> 445 </td>
+          <td id="table-username"> Joe </td>
+          <td id="table-points"> 445 </td>
         </tr>
-        <tr style="background: white; height: 10px;"></tr>
-        <tr style="width: 100%; height:100px;background-color:#D2D4F2;">
-          <td style="width:10%;font-size:36px; text-align: center;font-family:Inter;"> 5</td>
+        <tr id="table-seperator"></tr>
+        <tr id="table-row">
+          <td id="table-srno"> 5</td>
           <td style="width:10%">
-            <div style="width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: rgb(255, 255, 255);
-            display: flex;
-                  align-items: center;
-                  justify-content: center;
-             ">
-            <div style="width: 74.42px;
-              height:74.42px;
-              border-radius: 50%;
-              background: rgb(186, 190, 255);
-              display: flex;
-                  align-items: center;
-                  justify-content: center;
-              ">
-              
+            <div id="table-profile-outer">
+              <div id="table-profile-inner"></div>
             </div>
-          </div>
           </td>
-          <td style="width:40%;font-size:36px;font-family:Inter; text-align: left; padding-left: 20px;"> Jenny </td>
-          <td style="width:40%;font-size:36px;font-family:Inter; text-align: center;"> 438 </td>
+          <td id="table-username"> Jenny </td>
+          <td id="table-points"> 438 </td>
         </tr>
-        <tr style="background: white; height: 10px;"></tr>
-        <tr style="width: 100%; height:100px;background-color:#D2D4F2;">
-          <td style="width:10%;font-size:36px; text-align: center;font-family:Inter;"> 6</td>
+        <tr id="table-seperator"></tr>
+        <tr id="table-row">
+          <td id="table-srno"> 6</td>
           <td style="width:10%">
-            <div style="width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: rgb(255, 255, 255);
-            display: flex;
-                  align-items: center;
-                  justify-content: center;
-             ">
-            <div style="width: 74.42px;
-              height:74.42px;
-              border-radius: 50%;
-              background: rgb(186, 190, 255);
-              display: flex;
-                  align-items: center;
-                  justify-content: center;
-              ">
-              
+            <div id="table-profile-outer">
+              <div id="table-profile-inner"></div>
             </div>
-          </div>
           </td>
-          <td style="width:40%;font-size:36px;font-family:Inter; text-align: left; padding-left: 20px;"> Josh </td>
-          <td style="width:40%;font-size:36px;font-family:Inter; text-align: center;"> 432 </td>
+          <td id="table-username"> Josh </td>
+          <td id="table-points"> 432 </td>
         </tr>
-        <tr style="background: white; height: 10px;"></tr>
-       
-        <tr style="width: 100%; height:100px;background-color:#D2D4F2;">
-          <td style="width:10%;font-size:36px; text-align: center;font-family:Inter;"> 7</td>
+        <tr id="table-seperator"></tr>
+        <tr id="table-row">
+          <td id="table-srno"> 7</td>
           <td style="width:10%">
-            <div style="width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: rgb(255, 255, 255);
-            display: flex;
-                  align-items: center;
-                  justify-content: center;
-             ">
-            <div style="width: 74.42px;
-              height:74.42px;
-              border-radius: 50%;
-              background: rgb(186, 190, 255);
-              display: flex;
-                  align-items: center;
-                  justify-content: center;
-              ">
-              
+            <div id="table-profile-outer">
+              <div id="table-profile-inner"></div>
             </div>
-          </div>
+            </div>
           </td>
-          <td style="width:40%;font-size:36px;font-family:Inter; text-align: left; padding-left: 20px;"> Stella </td>
-          <td style="width:40%;font-size:36px;font-family:Inter; text-align: center;"> 321 </td>
+          <td id="table-username"> Stella </td>
+          <td id="table-points"> 321 </td>
         </tr>
-        <tr style="background: white; height: 10px;"></tr>
-        <tr style="width: 100%; height:100px;background-color:#D2D4F2;">
-          <td style="width:10%;font-size:36px; text-align: center;font-family:Inter;"> 8</td>
+        <tr id="table-seperator"></tr>
+        <tr id="table-row">
+          <td id="table-srno"> 8</td>
           <td style="width:10%">
-            <div style="width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: rgb(255, 255, 255);
-            display: flex;
-                  align-items: center;
-                  justify-content: center;
-             ">
-            <div style="width: 74.42px;
-              height:74.42px;
-              border-radius: 50%;
-              background: rgb(186, 190, 255);
-              display: flex;
-                  align-items: center;
-                  justify-content: center;
-              ">
-              
+            <div id="table-profile-outer">
+              <div id="table-profile-inner"></div>
             </div>
-          </div>
+            </div>
           </td>
-          <td style="width:40%;font-size:36px;font-family:Inter; text-align: left; padding-left: 20px;"> Sally </td>
-          <td style="width:40%;font-size:36px;font-family:Inter; text-align: center;"> 300 </td>
+          <td id="table-username"> Sally </td>
+          <td id="table-points"> 300 </td>
         </tr>
       </table>
     </center>
